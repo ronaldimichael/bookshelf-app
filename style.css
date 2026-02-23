@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  max-width: 950px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+.app-title {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0992c2;
+  padding: 12px;
+  color: white;
+}
+
+.input_section {
+  padding: 12px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 9px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > .input > input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.input_section > form > button {
+  background-color: #fcde81;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search_book {
+  padding: 12px;
+}
+
+.book_shelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
