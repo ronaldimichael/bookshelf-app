@@ -11,25 +11,50 @@ body {
 
 main {
   max-width: 950px;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   padding: 16px;
+  margin: 0 auto;
 }
+
 .app-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
   background-color: #222831;
   padding: 16px;
   color: #eeeeee;
 }
 
+.app-title > a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.search_book form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+
+#searchBookTitle {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
 #searchSubmit {
+  flex-shrink: 0;
   background-color: #00adb5;
   color: #222831;
-  border: 3px solid #393e46;
-  width: 70px;
+  border: 2px solid #393e46;
   border-radius: 8px;
-  padding: 2px;
+  padding: 6px 10px;
   cursor: pointer;
 }
 
@@ -39,152 +64,118 @@ main {
 
 #searchSubmit:active {
   background-color: #eeeeee;
-  transition:
-    transform 0.1s ease,
-    box-shadow 0.1s ease;
   transform: translate(1px, 1px);
 }
-#searchBookTitle {
-  border: none;
-  border-radius: 5px;
-  padding: 2px;
-}
-
-.app-title > a {
-  color: #eeeeee;
-  text-decoration: none;
-}
-
-/* Styling section tambah buku */
 
 .input_section {
-  padding: 12px;
-  margin: 16px;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid;
+  margin: 24px 0;
+  padding: 16px;
   background-color: #222831;
   border-radius: 12px;
-  box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
-  -webkit-box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
-  -moz-box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
+  color: #eeeeee;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input_section h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.input_section form {
+  background-color: #393e46;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.input {
+  margin-bottom: 12px;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
 }
 
 .input-checkbox {
-  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-.input_section > h2 {
-  color: #eeeeee;
-  text-align: center;
-  padding-bottom: 10px;
+.input-checkbox input {
+  width: auto;
 }
 
-.input_section > form {
-  background-color: #393e46;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.input > label {
-  color: #eeeeee;
-}
-
-.input_section > form > .input {
-  margin: 8px 0;
-}
-
-.input_section > form > .input > input {
+.input_section form button {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
-  background-color: #fdfdfd;
-  border: none;
-}
-
-.input_section > form > button {
+  border: 2px solid;
   background-color: #00adb5;
   color: #222831;
-  border: 2px solid;
-  border-radius: 8px;
-  display: block;
-  width: 100%;
-  padding: 8px;
   cursor: pointer;
 }
 
-.input_section > form > button:active {
-  background-color: #eeeeee;
-  transition:
-    transform 0.1s ease,
-    box-shadow 0.1s ease;
-  transform: translate(1px, 2px);
-}
-
-.input_section > form > button:hover {
+.input_section form button:hover {
   border: 2px solid #eeeeee;
 }
 
-.search_book {
-  display: flex;
-  padding: 12px;
-}
-
-.search_book .book_shelf {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-span {
-  font-weight: 600;
-}
-
-/* Styling section buku sudah dibaca dan belum */
-.search_book {
-  padding: 12px;
+.input_section form button:active {
+  background-color: #eeeeee;
+  transform: translate(1px, 2px);
 }
 
 .book_shelf {
-  padding: 12px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px 10px;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
 }
 
 .incomplete_shelf,
 .completed_shelf {
+  flex: 1 1 350px;
+  max-width: 500px;
+  width: 100%;
   background-color: #222831;
   color: #eeeeee;
-  border: 1px solid #333;
-  box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
-  -webkit-box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
-  -moz-box-shadow: 13px 15px 5px 0px rgba(158, 158, 158, 0.75);
   border-radius: 16px;
-  width: 430px;
   padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #incompleteBookList,
 #completeBookList {
   background-color: #393e46;
-  border: 1px solid #333;
   border-radius: 8px;
   padding: 16px;
+  margin-top: 12px;
 }
 
 .book-btn {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
 }
 
 .book-btn > button {
-  width: 25%;
-  border: 2px solid;
+  flex: 0 1 auto;
+  min-width: 100px;
+  padding: 6px 12px;
   border-radius: 8px;
-  color: #222831;
+  border: 2px solid;
   background-color: #00adb5;
+  color: #222831;
   cursor: pointer;
 }
 
@@ -194,8 +185,22 @@ span {
 
 .book-btn > button:active {
   background-color: #eeeeee;
-  transition:
-    transform 0.1s ease,
-    box-shadow 0.1s ease;
   transform: translate(1px, 1px);
+}
+
+@media (max-width: 600px) {
+  .app-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search_book form {
+    max-width: 100%;
+  }
+
+  .incomplete_shelf,
+  .completed_shelf {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
