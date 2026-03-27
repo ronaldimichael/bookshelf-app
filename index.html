@@ -1,6 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Bookshelf App adalah aplikasi manajemen buku sederhana berbasis web untuk menambahkan, mengedit, mencari, dan mengatur buku ke dalam rak selesai dan belum selesai dibaca."
+    />
+    <meta
+      name="keywords"
+      content="Bookshelf App, aplikasi buku, manajemen buku, rak buku online, JavaScript localStorage project"
+    />
+    <meta name="author" content="Ronaldi Maekel Bang" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#222831" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bookshelf App - Manajemen Buku Modern" />
+    <meta
+      property="og:description"
+      content="Kelola buku favoritmu dengan mudah. Tambah, edit, cari, dan atur buku dalam rak selesai & belum selesai dibaca."
+    />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bookshelf App - Manajemen Buku Modern"
+    />
+    <meta
+      name="twitter:description"
+      content="Aplikasi rak buku berbasis web dengan fitur tambah, edit, pencarian, dan penyimpanan localStorage."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bookshelf App - Manajemen Buku Modern" />
+    <meta
+      property="og:description"
+      content="Kelola buku favoritmu dengan mudah. Tambah, edit, cari, dan atur buku dalam rak selesai & belum selesai dibaca."
+    />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,11 +43,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Bookshelf App</title>
-
-    <!-- Impor script kamu di sini -->
-    <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
+    <title>Bookshelf App - Ronaldi Bang</title>
     <script defer src="main.js"></script>
   </head>
   <body>
@@ -93,10 +122,6 @@
           <h3>Belum selesai dibaca</h3>
 
           <div id="incompleteBookList" data-testid="incompleteBookList">
-            <!-- 
-            Ini adalah struktur HTML untuk masing-masing buku.
-            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
-          -->
             <div data-bookid="123123123" data-testid="bookItem">
               <h3 data-testid="bookItemTitle">Judul Buku 1</h3>
               <p data-testid="bookItemAuthor">Penulis: Penulis Buku 1</p>
@@ -116,10 +141,6 @@
           <h3>Selesai dibaca</h3>
 
           <div id="completeBookList" data-testid="completeBookList">
-            <!-- 
-            Ini adalah struktur HTML untuk masing-masing buku.
-            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
-          -->
             <div data-bookid="456456456" data-testid="bookItem">
               <h3 data-testid="bookItemTitle">Judul Buku 2</h3>
               <p data-testid="bookItemAuthor">Penulis: Penulis Buku 2</p>
